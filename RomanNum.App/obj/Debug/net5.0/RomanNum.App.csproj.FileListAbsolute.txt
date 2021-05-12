@@ -10,3 +10,15 @@ C:\Users\Lntinfotech\galvanize\RomanNum\RomanNum.App\obj\Debug\net5.0\RomanNum.A
 C:\Users\Lntinfotech\galvanize\RomanNum\RomanNum.App\obj\Debug\net5.0\RomanNum.App.dll
 C:\Users\Lntinfotech\galvanize\RomanNum\RomanNum.App\obj\Debug\net5.0\ref\RomanNum.App.dll
 C:\Users\Lntinfotech\galvanize\RomanNum\RomanNum.App\obj\Debug\net5.0\RomanNum.App.pdb
+D:\RiderProjects\RomanNumerals\RomanNum.App\bin\Debug\net5.0\RomanNum.App.deps.json
+D:\RiderProjects\RomanNumerals\RomanNum.App\bin\Debug\net5.0\RomanNum.App.dll
+D:\RiderProjects\RomanNumerals\RomanNum.App\bin\Debug\net5.0\ref\RomanNum.App.dll
+D:\RiderProjects\RomanNumerals\RomanNum.App\bin\Debug\net5.0\RomanNum.App.pdb
+D:\RiderProjects\RomanNumerals\RomanNum.App\obj\Debug\net5.0\RomanNum.App.csprojAssemblyReference.cache
+D:\RiderProjects\RomanNumerals\RomanNum.App\obj\Debug\net5.0\RomanNum.App.GeneratedMSBuildEditorConfig.editorconfig
+D:\RiderProjects\RomanNumerals\RomanNum.App\obj\Debug\net5.0\RomanNum.App.AssemblyInfoInputs.cache
+D:\RiderProjects\RomanNumerals\RomanNum.App\obj\Debug\net5.0\RomanNum.App.AssemblyInfo.cs
+D:\RiderProjects\RomanNumerals\RomanNum.App\obj\Debug\net5.0\RomanNum.App.csproj.CoreCompileInputs.cache
+D:\RiderProjects\RomanNumerals\RomanNum.App\obj\Debug\net5.0\RomanNum.App.dll
+D:\RiderProjects\RomanNumerals\RomanNum.App\obj\Debug\net5.0\ref\RomanNum.App.dll
+D:\RiderProjects\RomanNumerals\RomanNum.App\obj\Debug\net5.0\RomanNum.App.pdb

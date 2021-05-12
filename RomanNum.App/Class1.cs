@@ -16,18 +16,23 @@ namespace RomanNum.App
             {"M", 1000},
         };
 
-        public static int Convert(string number) {
+        public static int Convert(string number)
+        {
+            var storage = 0;
             if (number == null) {
                 throw new ArgumentNullException();
             }
 
             foreach (char c in number) {
-                if (!romanMap.ContainsKey(number)) {
+                if (!romanMap.ContainsKey(c.ToString())) {
                     throw new ApplicationException("Invalid Input");
                 }
-            }
 
-            return romanMap[number];
+                storage += romanMap[c.ToString()];
+            }
+            
+            
+            return storage;
         }
     }
 }

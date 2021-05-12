@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "JgqgLUAg3gtbu7uYkogeiUseUygubcLAaehc+ytquyTIsD5Q8u6rfcJ5xFy+esV0hVoImRyuUo2gAXHnE6FpSQ==",
+  "dgSpecHash": "1pt3/GUrhlT1OTXJD/fah3S/vwA3KvVpN69oBv66rVu3QkkF/xDoIPUffaGcWHgmXVy1D4bPu/YGPyA1WXJakw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lntinfotech\\galvanize\\RomanNum\\RomanNum.App\\RomanNum.App.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\RiderProjects\\RomanNumerals\\RomanNum.App\\RomanNum.App.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kevin\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
