@@ -22,3 +22,15 @@ D:\RiderProjects\RomanNumerals\RomanNum.App\obj\Debug\net5.0\RomanNum.App.csproj
 D:\RiderProjects\RomanNumerals\RomanNum.App\obj\Debug\net5.0\RomanNum.App.dll
 D:\RiderProjects\RomanNumerals\RomanNum.App\obj\Debug\net5.0\ref\RomanNum.App.dll
 D:\RiderProjects\RomanNumerals\RomanNum.App\obj\Debug\net5.0\RomanNum.App.pdb
+C:\Users\Lntinfotech\Documents\DotNet\RaaedRomanNumerals\romannumerals\RomanNum.App\bin\Debug\net5.0\RomanNum.App.deps.json
+C:\Users\Lntinfotech\Documents\DotNet\RaaedRomanNumerals\romannumerals\RomanNum.App\bin\Debug\net5.0\RomanNum.App.dll
+C:\Users\Lntinfotech\Documents\DotNet\RaaedRomanNumerals\romannumerals\RomanNum.App\bin\Debug\net5.0\ref\RomanNum.App.dll
+C:\Users\Lntinfotech\Documents\DotNet\RaaedRomanNumerals\romannumerals\RomanNum.App\bin\Debug\net5.0\RomanNum.App.pdb
+C:\Users\Lntinfotech\Documents\DotNet\RaaedRomanNumerals\romannumerals\RomanNum.App\obj\Debug\net5.0\RomanNum.App.csprojAssemblyReference.cache
+C:\Users\Lntinfotech\Documents\DotNet\RaaedRomanNumerals\romannumerals\RomanNum.App\obj\Debug\net5.0\RomanNum.App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lntinfotech\Documents\DotNet\RaaedRomanNumerals\romannumerals\RomanNum.App\obj\Debug\net5.0\RomanNum.App.AssemblyInfoInputs.cache
+C:\Users\Lntinfotech\Documents\DotNet\RaaedRomanNumerals\romannumerals\RomanNum.App\obj\Debug\net5.0\RomanNum.App.AssemblyInfo.cs
+C:\Users\Lntinfotech\Documents\DotNet\RaaedRomanNumerals\romannumerals\RomanNum.App\obj\Debug\net5.0\RomanNum.App.csproj.CoreCompileInputs.cache
+C:\Users\Lntinfotech\Documents\DotNet\RaaedRomanNumerals\romannumerals\RomanNum.App\obj\Debug\net5.0\RomanNum.App.dll
+C:\Users\Lntinfotech\Documents\DotNet\RaaedRomanNumerals\romannumerals\RomanNum.App\obj\Debug\net5.0\ref\RomanNum.App.dll
+C:\Users\Lntinfotech\Documents\DotNet\RaaedRomanNumerals\romannumerals\RomanNum.App\obj\Debug\net5.0\RomanNum.App.pdb

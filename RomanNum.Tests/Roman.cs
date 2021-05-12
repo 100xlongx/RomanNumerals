@@ -50,13 +50,17 @@ namespace RomanNum.Tests
             action.Should().Throw<ApplicationException>()
             .WithMessage("Invalid Input");
         }
-        
-        [Fact]
-        public void WhenGivenVI_ShouldReturn6()
+
+        [Theory]
+        [InlineData("IV", 4)]
+        [InlineData("VI", 6)]
+        [InlineData("X", 10)]
+        [InlineData("XII", 12)]
+        [InlineData("MCMXLIV", 1944)]
+        public void WhenGivenInput_ShouldReturnExpected(string input, int expected)
         {
-            int result = RomanConverter.Convert("VI");
-            result.Should().Be(6);
+            int result = RomanConverter.Convert(input);
+            result.Should().Be(expected);
         }
-        
     }
 }
