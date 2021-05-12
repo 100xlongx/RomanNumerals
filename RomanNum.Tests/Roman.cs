@@ -3,6 +3,7 @@ using Xunit;
 using RomanNum.App;
 using FluentAssertions;
 using System.Collections.Generic;
+using Xunit.Sdk;
 
 namespace RomanNum.Tests
 {
@@ -16,6 +17,14 @@ namespace RomanNum.Tests
             Action action = () => RomanConverter.Convert(roman);
 
             action.Should().Throw<ArgumentNullException>();
+        }
+        
+        [Fact]
+        public void ZeroCase_ShouldReturn0()
+        {
+            string roman = "";
+            int result = RomanConverter.Convert(roman);
+            result.Should().Be(0);
         }
 
         [Fact]
@@ -48,5 +57,6 @@ namespace RomanNum.Tests
             int result = RomanConverter.Convert("VI");
             result.Should().Be(6);
         }
+        
     }
 }
