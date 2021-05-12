@@ -58,5 +58,11 @@ namespace RomanNum.Tests
             result.Should().Be(6);
         }
         
+        [Fact]
+        public void WhenGivenIV_ShouldReturn4()
+        {
+            int result = RomanConverter.Convert("IV");
+            result.Should().Be(4);
+        }
     }
 }

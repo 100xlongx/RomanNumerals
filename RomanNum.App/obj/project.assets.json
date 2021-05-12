@@ -8,26 +8,24 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\kevin\\.nuget\\packages\\": {}
+    "C:\\Users\\Lntinfotech\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\RiderProjects\\RomanNumerals\\RomanNum.App\\RomanNum.App.csproj",
+      "projectUniqueName": "C:\\Users\\Lntinfotech\\galvanize\\RomanNum\\RomanNum.App\\RomanNum.App.csproj",
       "projectName": "RomanNum.App",
-      "projectPath": "D:\\RiderProjects\\RomanNumerals\\RomanNum.App\\RomanNum.App.csproj",
-      "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
-      "outputPath": "D:\\RiderProjects\\RomanNumerals\\RomanNum.App\\obj\\",
+      "projectPath": "C:\\Users\\Lntinfotech\\galvanize\\RomanNum\\RomanNum.App\\RomanNum.App.csproj",
+      "packagesPath": "C:\\Users\\Lntinfotech\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lntinfotech\\galvanize\\RomanNum\\RomanNum.App\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Lntinfotech\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -55,12 +53,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
