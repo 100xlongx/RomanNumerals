@@ -28,7 +28,7 @@ namespace RomanNum.Tests
 
         //Then
             action.Should().Throw<ApplicationException>()
-            .WithMessage("Invalid Input");
+            .WithMessage("Input was empty.");
         }
 
         [Fact]
@@ -86,12 +86,12 @@ namespace RomanNum.Tests
         public void Convert_ShouldReturnAnException_WhenRomanCharactersAreOutsideMaxInt()
         {
             //Given
-            string roman = "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM";
+            string roman = "MMMMCMXCIX";
             //When
             Action action = () => RomanConverter.Convert(roman);
             //Then
             action.Should().Throw<ApplicationException>()
-            .WithMessage("Value is above maximum allowed input");
+            .WithMessage("Invalid Input");
         }
 
         [Fact]
@@ -100,9 +100,10 @@ namespace RomanNum.Tests
             //Given
             string roman = "IIX";
             //When
-            var conversion = RomanConverter.Convert(roman);
+            Action action = () => RomanConverter.Convert(roman);
             //Then
-            conversion.Should().Be(5);
+            action.Should().Throw<ApplicationException>()
+            .WithMessage("Invalid Input");
         }
 
 

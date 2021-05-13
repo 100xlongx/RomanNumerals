@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace RomanNum.App
 {
@@ -7,6 +8,7 @@ namespace RomanNum.App
     {
 
         const int MAX_VALUE = 4999;
+        const string RomanValidator = "^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$";
 
         static Dictionary<char, int> romanMap = new Dictionary<char, int>()
         {
@@ -22,14 +24,19 @@ namespace RomanNum.App
         public static int Convert(string roman)
         {
             var storage = 0;
-
-            if (roman == String.Empty) {
-                throw new ApplicationException("Invalid Input");
-            }
+            Regex rx = new Regex(@"^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$");
 
             if (roman == null)
             {
                 throw new ArgumentNullException();
+            }
+
+            if (roman == String.Empty) {
+                throw new ApplicationException("Input was empty.");
+            }
+
+            if(!rx.IsMatch(roman)) {
+                throw new ApplicationException("Invalid Input");
             }
 
             for (int x = 0; x < roman.Length; x++)
@@ -39,23 +46,8 @@ namespace RomanNum.App
                     throw new ApplicationException("Invalid Input");
                 }
 
-                // if (roman.Length > 1 && x + 1 < roman.Length && romanMap[roman[x]] < romanMap[roman[x + 1]])
-                // {
-                //     storage += romanMap[roman[x + 1]] - romanMap[roman[x]];
-                //     x++;
-                // }
-                // else
-                // {
-                //     storage += romanMap[roman[x]];
-                // }
-
                 if (x + 1 < roman.Length && romanMap[roman[x]] < romanMap[roman[x + 1]]) {
                     storage -= romanMap[roman[x]];
-
-                    if (x > 1 && romanMap[roman[x-1]] <= romanMap[roman[x]] ) {
-                        throw new ApplicationException("A lower value cannot stand in front of a group of numerals in subtractive notation");
-                    }
-                    
                 } else {
                     storage += romanMap[roman[x]];
                 }
