@@ -5,6 +5,9 @@ namespace RomanNum.App
 {
     public static class RomanConverter
     {
+
+        const int MAX_VALUE = 4999;
+
         static Dictionary<char, int> romanMap = new Dictionary<char, int>()
         {
             {'I', 1},
@@ -36,14 +39,29 @@ namespace RomanNum.App
                     throw new ApplicationException("Invalid Input");
                 }
 
-                if (roman.Length > 1 && x + 1 < roman.Length && romanMap[roman[x]] < romanMap[roman[x + 1]])
-                {
-                    storage += romanMap[roman[x + 1]] - romanMap[roman[x]];
-                    x++;
-                }
-                else
-                {
+                // if (roman.Length > 1 && x + 1 < roman.Length && romanMap[roman[x]] < romanMap[roman[x + 1]])
+                // {
+                //     storage += romanMap[roman[x + 1]] - romanMap[roman[x]];
+                //     x++;
+                // }
+                // else
+                // {
+                //     storage += romanMap[roman[x]];
+                // }
+
+                if (x + 1 < roman.Length && romanMap[roman[x]] < romanMap[roman[x + 1]]) {
+                    storage -= romanMap[roman[x]];
+
+                    if (x > 1 && romanMap[roman[x-1]] <= romanMap[roman[x]] ) {
+                        throw new ApplicationException("A lower value cannot stand in front of a group of numerals in subtractive notation");
+                    }
+                    
+                } else {
                     storage += romanMap[roman[x]];
+                }
+
+                if (storage > MAX_VALUE) {
+                    throw new ApplicationException("Value is above maximum allowed input");
                 }
             }
 

@@ -82,6 +82,30 @@ namespace RomanNum.Tests
             .WithMessage("Invalid Input");
         }
 
+        [Fact]
+        public void Convert_ShouldReturnAnException_WhenRomanCharactersAreOutsideMaxInt()
+        {
+            //Given
+            string roman = "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM";
+            //When
+            Action action = () => RomanConverter.Convert(roman);
+            //Then
+            action.Should().Throw<ApplicationException>()
+            .WithMessage("Value is above maximum allowed input");
+        }
+
+        [Fact]
+        public void Convert_ShouldReturnAnException_WhenRomanTranslationIsNegative()
+        {
+            //Given
+            string roman = "IIX";
+            //When
+            var conversion = RomanConverter.Convert(roman);
+            //Then
+            conversion.Should().Be(5);
+        }
+
+
 
         [Theory]
         [InlineData("IV", 4)]
