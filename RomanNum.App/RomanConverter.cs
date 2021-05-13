@@ -7,9 +7,9 @@ namespace RomanNum.App
     public static class RomanConverter
     {
         private const int MAX_VALUE = 4999;
-        private static readonly Regex rx = new(@"^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$");
+        private static readonly Regex Rx = new(@"^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$");
 
-        private static readonly Dictionary<char, int> romanMap = new()
+        private static readonly Dictionary<char, int> RomanMap = new()
         {
             {'I', 1},
             {'V', 5},
@@ -26,20 +26,18 @@ namespace RomanNum.App
 
             if (roman == string.Empty) throw new ApplicationException("Input was empty.");
 
-            if (!rx.IsMatch(roman)) throw new ApplicationException("Invalid Input");
+            if (!Rx.IsMatch(roman)) throw new ApplicationException("Invalid Input");
 
             var storage = 0;
 
             for (var x = 0; x < roman.Length; x++)
             {
-                if (!romanMap.ContainsKey(roman[x])) throw new ApplicationException("Invalid Input");
 
-                if (x + 1 < roman.Length && romanMap[roman[x]] < romanMap[roman[x + 1]])
-                    storage -= romanMap[roman[x]];
+                if (x + 1 < roman.Length && RomanMap[roman[x]] < RomanMap[roman[x + 1]])
+                    storage -= RomanMap[roman[x]];
                 else
-                    storage += romanMap[roman[x]];
-
-                if (storage > MAX_VALUE) throw new ApplicationException("Value is above maximum allowed input");
+                    storage += RomanMap[roman[x]];
+                
             }
 
             return storage;
