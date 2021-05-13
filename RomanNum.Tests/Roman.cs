@@ -7,10 +7,10 @@ using Xunit.Sdk;
 
 namespace RomanNum.Tests
 {
-    public class UnitTest1
+    public class RomanConverterTests
     {
         [Fact]
-        public void ConversionFunctionReturns()
+        public void Convert_ShouldThrowException_WhenRomanIsNull()
         {
             string roman = null;
 
@@ -20,7 +20,7 @@ namespace RomanNum.Tests
         }
         
         [Fact]
-        public void ZeroCase_ShouldReturn0()
+        public void Convert_ShouldReturn0_WhenAnEmptyStringIsPassedIntoTheFunction()
         {
             string roman = "";
             int result = RomanConverter.Convert(roman);
@@ -28,7 +28,7 @@ namespace RomanNum.Tests
         }
 
         [Fact]
-        public void ConvertsSingleRomanNumeral()
+        public void Convert_ShouldReturnConversion_WhenRomanHasOneValue()
         {
             //Given
             string roman = "V";
@@ -39,7 +39,7 @@ namespace RomanNum.Tests
         }
 
         [Fact]
-        public void HandlesInvalidInput()
+        public void Convert_ShouldReturnAnException_WhenRomanIsInvalid()
         {
         //Given
             string roman = "PICKLE RICK";
@@ -57,7 +57,7 @@ namespace RomanNum.Tests
         [InlineData("X", 10)]
         [InlineData("XII", 12)]
         [InlineData("MCMXLIV", 1944)]
-        public void WhenGivenInput_ShouldReturnExpected(string input, int expected)
+        public void Convert_ShouldReturnExpected_WhenGivenInput(string input, int expected)
         {
             int result = RomanConverter.Convert(input);
             result.Should().Be(expected);
