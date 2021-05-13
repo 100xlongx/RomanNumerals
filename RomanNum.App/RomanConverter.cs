@@ -10,6 +10,8 @@ namespace RomanNum.App
         const int MAX_VALUE = 4999;
         const string RomanValidator = "^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$";
 
+        static Regex rx = new Regex(@"^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$");
+
         static Dictionary<char, int> romanMap = new Dictionary<char, int>()
         {
             {'I', 1},
@@ -23,9 +25,6 @@ namespace RomanNum.App
 
         public static int Convert(string roman)
         {
-            var storage = 0;
-            Regex rx = new Regex(@"^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$");
-
             if (roman == null)
             {
                 throw new ArgumentNullException();
@@ -38,6 +37,8 @@ namespace RomanNum.App
             if(!rx.IsMatch(roman)) {
                 throw new ApplicationException("Invalid Input");
             }
+
+            var storage = 0;
 
             for (int x = 0; x < roman.Length; x++)
             {
