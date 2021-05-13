@@ -1,9 +1,7 @@
 using System;
-using Xunit;
-using RomanNum.App;
 using FluentAssertions;
-using System.Collections.Generic;
-using Xunit.Sdk;
+using RomanNum.App;
+using Xunit;
 
 namespace RomanNum.Tests
 {
@@ -18,24 +16,24 @@ namespace RomanNum.Tests
 
             action.Should().Throw<ArgumentNullException>();
         }
-        
+
         [Fact]
         public void Convert_ShouldReturn0_WhenAnEmptyStringIsPassedIntoTheFunction()
         {
-            string roman = "";
+            var roman = "";
             Action action = () => RomanConverter.Convert(roman);
-        //When
+            //When
 
-        //Then
+            //Then
             action.Should().Throw<ApplicationException>()
-            .WithMessage("Input was empty.");
+                .WithMessage("Input was empty.");
         }
 
         [Fact]
         public void Convert_ShouldReturnConversion_WhenRomanHasOneValue()
         {
             //Given
-            string roman = "V";
+            var roman = "V";
             //When
             var conversion = RomanConverter.Convert(roman);
             //Then
@@ -46,66 +44,65 @@ namespace RomanNum.Tests
         [Fact]
         public void Convert_ShouldReturnAnException_WhenRomanIsInvalid()
         {
-        //Given
-            string roman = "PICKLE RICK";
+            //Given
+            var roman = "PICKLE RICK";
             Action action = () => RomanConverter.Convert(roman);
-        //When
+            //When
 
-        //Then
+            //Then
             action.Should().Throw<ApplicationException>()
-            .WithMessage("Invalid Input");
+                .WithMessage("Invalid Input");
         }
 
         [Fact]
         public void Convert_ShouldReturnAnException_WhenRomanIsNegative()
         {
-        //Given
-            string roman = "-IV";
+            //Given
+            var roman = "-IV";
             Action action = () => RomanConverter.Convert(roman);
-        //When
+            //When
 
-        //Then
+            //Then
             action.Should().Throw<ApplicationException>()
-            .WithMessage("Invalid Input");
+                .WithMessage("Invalid Input");
         }
 
         [Fact]
         public void Convert_ShouldReturnAnException_WhenRomanCharactersAreLowerCase()
         {
-        //Given
-            string roman = "iv";
+            //Given
+            var roman = "iv";
             Action action = () => RomanConverter.Convert(roman);
-        //When
+            //When
 
-        //Then
+            //Then
             action.Should().Throw<ApplicationException>()
-            .WithMessage("Invalid Input");
+                .WithMessage("Invalid Input");
         }
 
         [Fact]
         public void Convert_ShouldReturnAnException_WhenRomanCharactersAreOutsideMaxInt()
         {
             //Given
-            string roman = "MMMMCMXCIX";
+            var roman = "MMMMCMXCIX";
             //When
             Action action = () => RomanConverter.Convert(roman);
             //Then
             action.Should().Throw<ApplicationException>()
-            .WithMessage("Invalid Input");
+                .WithMessage("Invalid Input");
         }
 
         [Fact]
         public void Convert_ShouldReturnAnException_WhenRomanTranslationIsNegative()
         {
             //Given
-            string roman = "IIX";
+            var roman = "IIX";
             //When
             Action action = () => RomanConverter.Convert(roman);
             //Then
             action.Should().Throw<ApplicationException>()
-            .WithMessage("Invalid Input");
+                .WithMessage("Invalid Input");
         }
-
 
 
         [Theory]
@@ -117,7 +114,7 @@ namespace RomanNum.Tests
         [InlineData("I", 1)]
         public void Convert_ShouldReturnExpected_WhenGivenInput(string input, int expected)
         {
-            int result = RomanConverter.Convert(input);
+            var result = RomanConverter.Convert(input);
             result.Should().Be(expected);
         }
     }
