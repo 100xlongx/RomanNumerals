@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lntinfotech\\Documents\\DotNet\\RaaedRomanNumerals\\romannumerals\\RomanNum.Tests\\RomanNum.Tests.csproj": {}
+    "D:\\RiderProjects\\RomanNumerals\\RomanNum.Tests\\RomanNum.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lntinfotech\\Documents\\DotNet\\RaaedRomanNumerals\\romannumerals\\RomanNum.App\\RomanNum.App.csproj": {
+    "D:\\RiderProjects\\RomanNumerals\\RomanNum.App\\RomanNum.App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lntinfotech\\Documents\\DotNet\\RaaedRomanNumerals\\romannumerals\\RomanNum.App\\RomanNum.App.csproj",
+        "projectUniqueName": "D:\\RiderProjects\\RomanNumerals\\RomanNum.App\\RomanNum.App.csproj",
         "projectName": "RomanNum.App",
-        "projectPath": "C:\\Users\\Lntinfotech\\Documents\\DotNet\\RaaedRomanNumerals\\romannumerals\\RomanNum.App\\RomanNum.App.csproj",
-        "packagesPath": "C:\\Users\\Lntinfotech\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lntinfotech\\Documents\\DotNet\\RaaedRomanNumerals\\romannumerals\\RomanNum.App\\obj\\",
+        "projectPath": "D:\\RiderProjects\\RomanNumerals\\RomanNum.App\\RomanNum.App.csproj",
+        "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
+        "outputPath": "D:\\RiderProjects\\RomanNumerals\\RomanNum.App\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Lntinfotech\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -52,34 +54,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Lntinfotech\\Documents\\DotNet\\RaaedRomanNumerals\\romannumerals\\RomanNum.Tests\\RomanNum.Tests.csproj": {
+    "D:\\RiderProjects\\RomanNumerals\\RomanNum.Tests\\RomanNum.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lntinfotech\\Documents\\DotNet\\RaaedRomanNumerals\\romannumerals\\RomanNum.Tests\\RomanNum.Tests.csproj",
+        "projectUniqueName": "D:\\RiderProjects\\RomanNumerals\\RomanNum.Tests\\RomanNum.Tests.csproj",
         "projectName": "RomanNum.Tests",
-        "projectPath": "C:\\Users\\Lntinfotech\\Documents\\DotNet\\RaaedRomanNumerals\\romannumerals\\RomanNum.Tests\\RomanNum.Tests.csproj",
-        "packagesPath": "C:\\Users\\Lntinfotech\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lntinfotech\\Documents\\DotNet\\RaaedRomanNumerals\\romannumerals\\RomanNum.Tests\\obj\\",
+        "projectPath": "D:\\RiderProjects\\RomanNumerals\\RomanNum.Tests\\RomanNum.Tests.csproj",
+        "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
+        "outputPath": "D:\\RiderProjects\\RomanNumerals\\RomanNum.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Lntinfotech\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Lntinfotech\\Documents\\DotNet\\RaaedRomanNumerals\\romannumerals\\RomanNum.App\\RomanNum.App.csproj": {
-                "projectPath": "C:\\Users\\Lntinfotech\\Documents\\DotNet\\RaaedRomanNumerals\\romannumerals\\RomanNum.App\\RomanNum.App.csproj"
+              "D:\\RiderProjects\\RomanNumerals\\RomanNum.App\\RomanNum.App.csproj": {
+                "projectPath": "D:\\RiderProjects\\RomanNumerals\\RomanNum.App\\RomanNum.App.csproj"
               }
             }
           }
@@ -134,7 +138,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

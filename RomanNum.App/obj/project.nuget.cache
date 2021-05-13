@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wKQd084vE2PiS+5zc1gfK2RT5GkZDZFAyCg+ezde+7KTtpcuScckwA5GWVSLEaq+UIQCjJsKQK5KjiT3C+ohUA==",
+  "dgSpecHash": "Vn3SCL6qZkw/J+dM80eq4Rwbr0FzqNAGYIYFJhofn6LtDU5hhCd43I+YSLHIIrX6gBO19sLSByXCziHXlXA96A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lntinfotech\\Documents\\DotNet\\RaaedRomanNumerals\\romannumerals\\RomanNum.App\\RomanNum.App.csproj",
+  "projectFilePath": "D:\\RiderProjects\\RomanNumerals\\RomanNum.App\\RomanNum.App.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Lntinfotech\\Documents\\DotNet\\RaaedRomanNumerals\\romannumerals\\RomanNum.App\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
