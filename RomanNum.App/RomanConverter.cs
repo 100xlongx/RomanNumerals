@@ -19,6 +19,11 @@ namespace RomanNum.App
         public static int Convert(string roman)
         {
             var storage = 0;
+
+            if (roman == String.Empty) {
+                throw new ApplicationException("Invalid Input");
+            }
+
             if (roman == null)
             {
                 throw new ArgumentNullException();

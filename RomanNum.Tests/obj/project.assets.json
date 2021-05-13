@@ -5776,34 +5776,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kevin\\.nuget\\packages\\": {}
+    "C:\\Users\\Lntinfotech\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\RiderProjects\\RomanNumerals\\RomanNum.Tests\\RomanNum.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Lntinfotech\\galvanize\\RomanNum\\RomanNum.Tests\\RomanNum.Tests.csproj",
       "projectName": "RomanNum.Tests",
-      "projectPath": "D:\\RiderProjects\\RomanNumerals\\RomanNum.Tests\\RomanNum.Tests.csproj",
-      "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
-      "outputPath": "D:\\RiderProjects\\RomanNumerals\\RomanNum.Tests\\obj\\",
+      "projectPath": "C:\\Users\\Lntinfotech\\galvanize\\RomanNum\\RomanNum.Tests\\RomanNum.Tests.csproj",
+      "packagesPath": "C:\\Users\\Lntinfotech\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lntinfotech\\galvanize\\RomanNum\\RomanNum.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Lntinfotech\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\RiderProjects\\RomanNumerals\\RomanNum.App\\RomanNum.App.csproj": {
-              "projectPath": "D:\\RiderProjects\\RomanNumerals\\RomanNum.App\\RomanNum.App.csproj"
+            "C:\\Users\\Lntinfotech\\galvanize\\RomanNum\\RomanNum.App\\RomanNum.App.csproj": {
+              "projectPath": "C:\\Users\\Lntinfotech\\galvanize\\RomanNum\\RomanNum.App\\RomanNum.App.csproj"
             }
           }
         }
@@ -5858,7 +5856,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
