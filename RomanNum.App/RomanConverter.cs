@@ -6,11 +6,10 @@ namespace RomanNum.App
 {
     public static class RomanConverter
     {
+        private const int MAX_VALUE = 4999;
+        private static readonly Regex rx = new(@"^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$");
 
-        const int MAX_VALUE = 4999;
-        static Regex rx = new Regex(@"^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$");
-
-        static Dictionary<char, int> romanMap = new Dictionary<char, int>()
+        private static readonly Dictionary<char, int> romanMap = new()
         {
             {'I', 1},
             {'V', 5},
@@ -23,41 +22,27 @@ namespace RomanNum.App
 
         public static int Convert(string roman)
         {
-            if (roman == null)
+            if (roman == null) throw new ArgumentNullException();
+
+            if (roman == string.Empty) throw new ApplicationException("Input was empty.");
+
+            if (!rx.IsMatch(roman)) throw new ApplicationException("Invalid Input");
+
+            var storage = 0;
+
+            for (var x = 0; x < roman.Length; x++)
             {
-                throw new ArgumentNullException();
-            }
+                if (!romanMap.ContainsKey(roman[x])) throw new ApplicationException("Invalid Input");
 
-            if (roman == String.Empty) {
-                throw new ApplicationException("Input was empty.");
-            }
-
-            if(!rx.IsMatch(roman)) {
-                throw new ApplicationException("Invalid Input");
-            }
-
-            int storage = 0;
-
-            for (int x = 0; x < roman.Length; x++)
-            {
-                if (!romanMap.ContainsKey(roman[x]))
-                {
-                    throw new ApplicationException("Invalid Input");
-                }
-
-                if (x + 1 < roman.Length && romanMap[roman[x]] < romanMap[roman[x + 1]]) {
+                if (x + 1 < roman.Length && romanMap[roman[x]] < romanMap[roman[x + 1]])
                     storage -= romanMap[roman[x]];
-                } else {
+                else
                     storage += romanMap[roman[x]];
-                }
 
-                if (storage > MAX_VALUE) {
-                    throw new ApplicationException("Value is above maximum allowed input");
-                }
+                if (storage > MAX_VALUE) throw new ApplicationException("Value is above maximum allowed input");
             }
 
             return storage;
         }
     }
 }
-
